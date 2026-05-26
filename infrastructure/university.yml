@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: EAIT University Infrastructure
+
+Resources:
+
+  StudentRecordsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: eait-student-records
+
+  LecturerUploadsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: eait-lecturer-uploads

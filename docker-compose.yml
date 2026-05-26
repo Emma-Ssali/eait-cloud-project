@@ -1,0 +1,15 @@
+services:
+
+  localstack:
+    container_name: localstack
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+
+    environment:
+      - SERVICES=s3,lambda,dynamodb,cloudformation
+      - DEBUG=1
+
+    volumes:
+      - "./localstack:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
