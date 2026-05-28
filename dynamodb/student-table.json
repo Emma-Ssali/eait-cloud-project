@@ -1,0 +1,16 @@
+{
+    "TableName": "Students",
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "StudentID",
+            "AttributeType": "S"
+        }
+    ],
+    "KeySchema": [
+        {
+            "AttributeName": "StudentID",
+            "KeyType": "HASH"
+        }
+    ],
+    "BillingMode": "PAY_PER_REQUEST"
+}
