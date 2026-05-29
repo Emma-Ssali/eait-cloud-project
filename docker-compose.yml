@@ -7,7 +7,7 @@ services:
       - "4566:4566"
 
     environment:
-      - SERVICES=s3,lambda,dynamodb,cloudformation
+      - SERVICES=s3,lambda,dynamodb,cloudformation,iam
       - DEBUG=1
 
     volumes:
